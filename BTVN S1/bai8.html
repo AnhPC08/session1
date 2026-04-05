@@ -2,29 +2,58 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <title>BTVN Session 1</title>
+    <title>BTVN Session 1 - Final</title>
     <style>
-      .container {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-      }
-      main {
-        width: 65%;
-      }
-      aside {
-        width: 30%;
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        color: #333;
       }
 
       nav ul {
         display: flex;
         list-style: none;
         padding: 0;
-        gap: 15px;
+        gap: 10px;
+        font-size: 12px;
+      }
+
+      .main-content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      main {
+        width: 70%;
+      }
+      aside {
+        width: 25%;
+        text-align: left;
       }
       aside img {
         width: 100%;
-        max-width: 200px;
+        max-width: 180px;
+      }
+
+      .newsletter {
+        border-top: 1px solid #ccc;
+        padding-top: 15px;
+        margin-top: 10px;
+        font-size: 13px;
+      }
+      input {
+        margin-top: 5px;
+        padding: 3px;
+        width: 200px;
+      }
+      button {
+        padding: 3px 10px;
+        cursor: pointer;
+      }
+
+      footer {
+        font-size: 12px;
+        margin-top: 10px;
       }
     </style>
   </head>
@@ -41,17 +70,17 @@
       <hr />
     </header>
 
-    <div class="container">
+    <div class="main-content">
       <main>
         <h2>Bài viết mới nhất</h2>
         <article>
-          <h3>Lộ trình học Front-end Web</h3>
-          <p>Nội dung lộ trình học tập...</p>
+          <strong>Lộ trình học Front-end Web</strong>
+          <p>Nội dung bài viết...</p>
         </article>
       </main>
 
       <aside>
-        <h3>Thông tin phụ</h3>
+        <strong>Thông tin phụ</strong>
         <p>Quảng cáo các khóa học mới nhất tại Academy.</p>
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtnFOJBgrtOnN5xYgzYvvzblKRiKUfQqkvg&s"
@@ -60,7 +89,12 @@
       </aside>
     </div>
 
-    <br />
+    <div class="newsletter">
+      <strong>Đăng ký nhận bản tin mới nhất:</strong><br />
+      <input type="email" placeholder="Nhập email của bạn..." />
+      <button type="submit">Đăng ký</button>
+    </div>
+
     <footer>
       <p>&copy; 2026 Nguyễn Văn A - Học viên Rikkei</p>
     </footer>
